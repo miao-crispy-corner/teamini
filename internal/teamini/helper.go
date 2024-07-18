@@ -49,10 +49,10 @@ func initConfig() {
 	viper.AutomaticEnv()
 
 	// 读取环境变量的前缀为 teamini，如果是 teamini，将自动转变为大写。
-	viper.SetEnvPrefix("teamini")
+	viper.SetEnvPrefix("TEAMINI")
 
 	// 以下 2 行，将 viper.Get(key) key 字符串中 '.' 和 '-' 替换为 '_'
-	replacer := strings.NewReplacer(".", "_")
+	replacer := strings.NewReplacer(".", "_", "-", "_")
 	viper.SetEnvKeyReplacer(replacer)
 
 	// 读取配置文件。如果指定了配置文件名，则使用指定的配置文件，否则在注册的搜索路径中搜索
