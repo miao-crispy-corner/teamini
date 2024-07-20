@@ -6,7 +6,7 @@ jwt-secret: Rtg8BPKNEf2mB4mgvKONGPZZQSaJWNLijxR42qRgq0iBb5 # JWT 签发密钥
 
 # MySQL 数据库相关配置
 db:
-  host: 42.193.219.59  # MySQL 机器 IP 和端口，默认 127.0.0.1:3306
+  host: 127.0.0.1  # MySQL 机器 IP 和端口，默认 127.0.0.1:3306
   username: teamini # MySQL 用户名(建议授权最小权限集)
   password: teamini123 # MySQL 用户密码
   database: teamini # teamini 系统所用的数据库名
